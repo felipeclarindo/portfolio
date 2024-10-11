@@ -1,16 +1,16 @@
 import Link from "next/link";
 
-function LinksRapido() {
+function QuickLinks() {
   return (
     <nav>
       <ul>
-        <li>
+        <li className="text-[var(--primary-text-color)]">
           <Link href="/">Home</Link>
         </li>
-        <li>
+        <li className="text-[var(--primary-text-color)]">
           <Link href="/projetos">Projetos</Link>
         </li>
-        <li>
+        <li className="text-[var(--primary-text-color)]">
           <Link href="/curriculo">Curriculo</Link>
         </li>
       </ul>
@@ -18,4 +18,4 @@ function LinksRapido() {
   );
 }
 
-export { LinksRapido };
+export { QuickLinks };

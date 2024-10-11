@@ -1,22 +1,5 @@
 import { NextResponse } from "next/server";
 
-type Tecnologia = {
-  id: number;
-  nome: string;
-  image: string;
-};
-
-type ProjetoProps = {
-  id: number;
-  nome: string;
-  descricao: string;
-  image: string;
-  categoria: string;
-  tecnologias: Array<Tecnologia>;
-  status: string;
-  dataInicio: string;
-  dataFim: string;
-};
 
 const projetos: Array<ProjetoProps> = [
   {

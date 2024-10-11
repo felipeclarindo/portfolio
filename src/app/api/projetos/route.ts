@@ -1,7 +1,8 @@
+import { ProjectProps } from "@/types";
 import { NextResponse } from "next/server";
 
 
-const projetos: Array<ProjetoProps> = [
+const projetos: Array<ProjectProps> = [
   {
     id: 1,
     nome: "Tech Mech",

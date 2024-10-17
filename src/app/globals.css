@@ -8,3 +8,8 @@
   --primary-text-color: white;
   --second-text-color: black;
 }
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}

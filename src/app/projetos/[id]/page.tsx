@@ -1,8 +1,10 @@
+"use client";
+
 import { ProjectProps } from "@/types";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-export default function ProjetoPage({ params }: { params: { id: number } }) {
+export default function ProjectPage({ params }: { params: { id: number } }) {
   const [projeto, setProjeto] = useState<ProjectProps>({
     id: 0,
     nome: "",
@@ -17,15 +19,18 @@ export default function ProjetoPage({ params }: { params: { id: number } }) {
 
   useEffect(() => {
     async function getProjeto() {
-      const response = await fetch(
-        `https://localhost:3000/produtos/${params.id}`
-      );
-      const data = await response.json();
-
-      setProjeto(data);
+      try {
+        const response = await fetch(
+          `https://localhost:3000/api/projetos/${params.id}`
+        );
+        const data = await response.json();
+        setProjeto(data);
+      } catch (error) {
+        console.error(error);
+      }
     }
     getProjeto();
-  }, [params]);
+  }, [params.id, projeto]);
 
   return (
     <div>

@@ -15,7 +15,8 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "next": "14.2.14",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -24,7 +25,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.14",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1",
+    "tailwindcss": "^3.4.14",
     "typescript": "^5"
   }
 }

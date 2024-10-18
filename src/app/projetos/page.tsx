@@ -1,6 +1,6 @@
 "use client";
 
-import { Pesquisa } from "@/components/Pesquisa";
+import { Pesquisa } from "@/components/Project/Pesquisa";
 import { ProjectCard } from "@/components/Project/ProjectCard";
 import { ProjectProps } from "@/types";
 import { useEffect, useState } from "react";
